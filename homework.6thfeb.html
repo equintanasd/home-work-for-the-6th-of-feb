@@ -7,6 +7,86 @@
         <!-- <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script> -->
         <title>designate css for media types</title>
     </head>
+    <style>/*Mobile viewport*/
+    header {
+        height: calc(50px + 10px);
+        background-color: powderblue;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        }
+        /*
+        img {
+            float: left;
+        }*/
+        nav {
+            font-size: 50px;
+            height: 100px;
+            background-color: green;
+            margin: 5px 0px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+
+        }
+        .nav-bar-four {
+            display: none;
+        }
+        /*small tablet*/
+        @media(min-width: 360px){
+            header {
+                height: 75px;
+            }
+            #navbar {
+                height: 150px;
+
+
+            }
+            .nav-bar-three,.nav-bar-two {
+                margin: 5px 5px;
+
+                width: calc(50% - 10px);
+                float: left;
+                /*flex-direction: row;
+                justify-content: center;*/
+            }
+            nav-bar-four {
+                display: none;
+            }
+        }
+        @media (min-width: 480px) {
+            header{
+                height: 100px;
+            }
+            #navbar {
+                height: 200px;
+                margin: 5px 3.333px;
+                width: calc(33.33% - 6.666px);
+                float: left;
+                /*flex-direction: row;
+                justify-content: center;*/
+            }
+
+        }
+        @media (min-width: 800px){
+            header {
+                height: 150px;
+            }
+            #navbar {
+                height: 300px;
+                width: calc(25% - 10px);
+                background-color: green;
+                margin: 5px 5px;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+            }
+            .nav-bar-four {
+                display: inline;
+            }
+        }
+    </style>
+        
     <body>
         <header>
             <img src="http://www.placehold.it/50/50">
